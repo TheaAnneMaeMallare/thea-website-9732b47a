@@ -79,11 +79,14 @@ const Index = () => {
       <section id="video" className="section-padding">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Video Resume</h2>
-          <div className="max-w-3xl mx-auto aspect-video bg-gray-200 rounded-lg">
-            {/* Add your video embed code here */}
-            <div className="w-full h-full flex items-center justify-center">
-              <p className="text-gray-600">Video Resume Coming Soon</p>
-            </div>
+          <div className="max-w-3xl mx-auto aspect-video">
+            <iframe
+              className="w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/placeholder"
+              title="Video Resume"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>
@@ -93,10 +96,11 @@ const Index = () => {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Certificates</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Add your certificates here */}
-            <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-              <p className="text-gray-600">Certificate 1</p>
-            </div>
+            <img 
+              src="/lovable-uploads/aed9ea82-3130-4884-aa0d-38f9d6f724ae.png" 
+              alt="Certificate Background" 
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
             <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
               <p className="text-gray-600">Certificate 2</p>
             </div>
