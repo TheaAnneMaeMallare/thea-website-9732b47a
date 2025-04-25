@@ -1,4 +1,3 @@
-
 import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -39,7 +38,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background font-playfair">
       <Header />
       <Hero />
 
@@ -111,32 +110,10 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section id="testimonials" className="section-padding">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Testimonials</h2>
-          <Carousel className="max-w-xl mx-auto">
-            <CarouselContent>
-              {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index}>
-                  <Card>
-                    <CardContent className="p-6 text-center">
-                      <p className="text-lg mb-4">"{testimonial.content}"</p>
-                      <p className="font-semibold">{testimonial.name}</p>
-                      <p className="text-gray-600">{testimonial.role}</p>
-                    </CardContent>
-                  </Card>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
-        </div>
-      </section>
-
       {/* Contact Section */}
-      <section id="contact" className="section-padding bg-gray-50">
+      <section id="contact" className="section-padding bg-accent">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Contact Me</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-primary">Contact Me</h2>
           <div className="flex justify-center space-x-6">
             <Button variant="ghost" size="icon" asChild>
               <a href="mailto:your.email@example.com" target="_blank" rel="noopener noreferrer">
