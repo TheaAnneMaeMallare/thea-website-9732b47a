@@ -12,10 +12,10 @@ const Hero = () => {
             <AvatarFallback>TM</AvatarFallback>
           </Avatar>
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6">
+        <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 font-signika">
           Hi, I'm Thea Anne Mae Mallare
         </h1>
-        <p className="text-xl md:text-2xl text-secondary mb-8 max-w-2xl mx-auto">
+        <p className="text-xl md:text-2xl text-secondary mb-8 max-w-2xl mx-auto font-quicksand">
           Curiosity-Provoking IT Support Specialist
         </p>
         <Button
@@ -30,4 +30,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

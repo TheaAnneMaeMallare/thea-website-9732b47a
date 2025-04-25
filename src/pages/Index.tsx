@@ -1,9 +1,9 @@
+
 import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 
 const Index = () => {
   const testimonials = [
@@ -38,15 +38,15 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background font-playfair">
+    <div className="min-h-screen bg-background font-helvetica">
       <Header />
       <Hero />
 
       {/* About Section */}
       <section id="about" className="section-padding">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
-          <div className="max-w-3xl mx-auto text-lg text-gray-700">
+          <h2 className="text-3xl font-bold mb-8 text-center font-signika">About Me</h2>
+          <div className="max-w-3xl mx-auto text-lg text-gray-700 font-helvetica">
             <p>
               I am a passionate web developer with expertise in modern technologies.
               My journey in IT has equipped me with strong problem-solving skills
@@ -59,14 +59,14 @@ const Index = () => {
       {/* Blog Section */}
       <section id="blog" className="section-padding bg-gray-50">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Blog</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center font-signika">Blog</h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {blogPosts.map((post) => (
               <Card key={post.title}>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
-                  <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                  <p className="text-sm text-gray-500">{post.date}</p>
+                  <h3 className="text-xl font-semibold mb-2 font-quicksand">{post.title}</h3>
+                  <p className="text-gray-600 mb-4 font-helvetica">{post.excerpt}</p>
+                  <p className="text-sm text-gray-500 font-quicksand">{post.date}</p>
                 </CardContent>
               </Card>
             ))}

@@ -19,8 +19,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
-        playfair: ["Playfair Display", "serif"],
+        'signika': ['Signika', 'sans-serif'],
+        'quicksand': ['Quicksand', 'sans-serif'],
+        'helvetica': ['Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
