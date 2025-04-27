@@ -93,15 +93,20 @@ const Index = () => {
           <h2 className="text-3xl font-bold mb-8 text-center">Certificates</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <img 
-              src="/lovable-uploads/aed9ea82-3130-4884-aa0d-38f9d6f724ae.png" 
-              alt="Certificate Background" 
+              src="/lovable-uploads/image_2025-03-19_16-14-34.png" 
+              alt="Developing Designs for a Logo" 
               className="w-full h-auto rounded-lg shadow-lg"
             />
-            <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-              <p className="text-gray-600">Certificate 2</p>
-            </div>
-            <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-              <p className="text-gray-600">Certificate 3</p>
+            <img 
+              src="/lovable-uploads/image_2025-03-19_16-17-09.png" 
+              alt="Introduction to Visual Graphic Design" 
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
+            <img 
+              src="/lovable-uploads/image_2025-03-24_02-02-32.png" 
+              alt="Developing Designs for Print Media" 
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
             </div>
           </div>
         </div>
