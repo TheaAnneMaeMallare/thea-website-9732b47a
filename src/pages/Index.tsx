@@ -1,4 +1,3 @@
-
 import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -26,14 +25,9 @@ const Index = () => {
 
   const blogPosts = [
     {
-      title: "The Future of Web Development",
-      excerpt: "Exploring upcoming trends in web development and their impact...",
+      title: "Building Connections through IT Support",
+      excerpt: "Sharing my journey and thoughts on how real client connections fuel better IT solutions...",
       date: "2024-04-20",
-    },
-    {
-      title: "Understanding Modern JavaScript",
-      excerpt: "A deep dive into the latest JavaScript features and best practices...",
-      date: "2024-04-15",
     },
   ];
 
@@ -46,12 +40,15 @@ const Index = () => {
       <section id="about" className="section-padding">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center font-signika">About Me</h2>
-          <div className="max-w-3xl mx-auto text-lg text-gray-700 font-helvetica">
+          <div className="max-w-3xl mx-auto text-lg text-gray-700 font-helvetica space-y-4">
             <p>
-              I am a passionate web developer with expertise in modern technologies.
-              My journey in IT has equipped me with strong problem-solving skills
-              and a deep understanding of web development principles.
+              As an IT Support Specialist, it is in my capacity and willingness to fully understand each of my client’s unique needs by asking the right questions. We wanted the best overall quality experience by observing what the client needs, catering, and addressing every concern, with their information handled securely and with the utmost care. This approach I am proud of, ensures that solutions are not only effective and reliable, but also tailored to deliver peace of mind and confidence in every interaction.
             </p>
+            <p>
+              What varies us from every other IT Support Specialist is we are aspired and dedicated to learn and grow alongside our clients as we progress into the IT Industry. One distinct feature that I am looking forward with my duty is the connection that I can build with each client. Their satisfaction with my work would be a reflection of my progression and commitment to staying ahead in this evolving world of technology.
+            </p>
+            <p>Contact: 09216850223</p>
+            <p>Email: theaannemae.mallare@neu.edu.ph</p>
           </div>
         </div>
       </section>
@@ -116,22 +113,22 @@ const Index = () => {
           <h2 className="text-3xl font-bold mb-8 text-center text-primary">Contact Me</h2>
           <div className="flex justify-center space-x-6">
             <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:your.email@example.com" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:theaannemae.mallare@neu.edu.ph" target="_blank" rel="noopener noreferrer">
                 <Mail className="h-6 w-6" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/thea-anne-mae-mallare-a579002a4/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-6 w-6" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/theaxmllr/" target="_blank" rel="noopener noreferrer">
                 <Instagram className="h-6 w-6" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/myname.is.theaa" target="_blank" rel="noopener noreferrer">
                 <Facebook className="h-6 w-6" />
               </a>
             </Button>
@@ -144,7 +141,6 @@ const Index = () => {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Interactive Content</h2>
           <div className="max-w-3xl mx-auto aspect-video bg-gray-200 rounded-lg">
-            {/* Add your H5P embed code here */}
             <div className="w-full h-full flex items-center justify-center">
               <p className="text-gray-600">H5P Content Coming Soon</p>
             </div>
