@@ -10,11 +10,10 @@ const Header = () => {
           <span className="text-2xl font-bold text-primary">Thea Anne Mae</span>
         </Link>
         <nav className="hidden md:flex space-x-8">
-          <Link to="/#about" className="hover:text-secondary transition-colors">About</Link>
-          <Link to="/#blog" className="hover:text-secondary transition-colors">Blog</Link>
-          <Link to="/#certificates" className="hover:text-secondary transition-colors">Certificates</Link>
-          <Link to="/#testimonials" className="hover:text-secondary transition-colors">Testimonials</Link>
-          <Link to="/#contact" className="hover:text-secondary transition-colors">Contact</Link>
+          <a href="#about" className="hover:text-secondary transition-colors">About</a>
+          <a href="#blog" className="hover:text-secondary transition-colors">Blog</a>
+          <a href="#certificates" className="hover:text-secondary transition-colors">Certificates</a>
+          <a href="#contact" className="hover:text-secondary transition-colors">Contact</a>
         </nav>
       </div>
     </header>
