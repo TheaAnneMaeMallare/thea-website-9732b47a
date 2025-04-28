@@ -1,5 +1,4 @@
-
-import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Phone, Video } from "lucide-react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
@@ -13,12 +12,33 @@ const Index = () => {
       date: "2024-04-28",
       image: "/lovable-uploads/33bb35d3-b23a-4d89-a93c-6422a905ee8c.png"
     },
+    {
+      title: "The Future of IT Support: A Personal Perspective",
+      excerpt: "Exploring how modern IT support is evolving with technology and the increasing importance of personal connection in technical assistance.",
+      date: "2024-04-28",
+      image: "/lovable-uploads/3b8a96f6-6dca-4512-b15a-b62e277b11b5.png"
+    }
   ];
 
   return (
     <div className="min-h-screen bg-background font-helvetica">
       <Header />
       <Hero />
+
+      {/* Node Website Link */}
+      <div className="bg-primary/10 py-4 text-center">
+        <p className="text-primary">
+          View project on GitHub: {" "}
+          <a 
+            href="https://github.com/theaannemae/mallare-mae-web" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="underline hover:text-secondary"
+          >
+            theaannemae/mallare-mae-web
+          </a>
+        </p>
+      </div>
 
       {/* About Section */}
       <section id="about" className="section-padding">
@@ -40,6 +60,24 @@ const Index = () => {
                 <Mail className="h-5 w-5 text-primary" />
                 <span>theaannemae.mallare@neu.edu.ph</span>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Resume Section */}
+      <section id="video-resume" className="section-padding bg-gray-50">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center font-signika">Video Resume</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="aspect-w-16 aspect-h-9">
+              <iframe
+                src="https://www.youtube.com/embed/your-video-id"
+                title="Video Resume"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-[400px] rounded-lg shadow-lg"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -86,6 +124,24 @@ const Index = () => {
               alt="Developing Designs for a Logo" 
               className="w-full h-auto rounded-lg shadow-lg"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* H5P Content Section */}
+      <section id="h5p" className="section-padding">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center font-signika">Interactive Content</h2>
+          <div className="max-w-4xl mx-auto">
+            <iframe
+              src="https://your-h5p-embed-url"
+              width="100%"
+              height="400"
+              frameBorder="0"
+              allowFullScreen
+              title="H5P Content"
+              className="rounded-lg shadow-lg"
+            ></iframe>
           </div>
         </div>
       </section>
