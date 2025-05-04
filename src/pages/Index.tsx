@@ -1,22 +1,75 @@
+
 import { Facebook, Instagram, Linkedin, Mail, Phone, Video } from "lucide-react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useState } from "react";
+import { 
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle 
+} from "@/components/ui/dialog";
 
 const Index = () => {
+  const [selectedCertificate, setSelectedCertificate] = useState(null);
+
   const blogPosts = [
     {
       title: "My Journey Through Tech: A Visual Story",
       excerpt: "A collection of motivational quotes and personal insights from my journey in technology, reflecting my approach to problem-solving and growth in the IT industry.",
-      date: "2024-04-28",
+      date: "2025-04-28",
       image: "/lovable-uploads/33bb35d3-b23a-4d89-a93c-6422a905ee8c.png"
     },
     {
       title: "The Future of IT Support: A Personal Perspective",
       excerpt: "Exploring how modern IT support is evolving with technology and the increasing importance of personal connection in technical assistance.",
-      date: "2024-04-28",
+      date: "2025-04-28",
       image: "/lovable-uploads/3b8a96f6-6dca-4512-b15a-b62e277b11b5.png"
+    }
+  ];
+
+  const certificates = [
+    {
+      id: 1,
+      title: "Developing Designs for Print Media",
+      image: "/lovable-uploads/567a6fe2-9f02-4903-a438-d6485e377dac.png",
+      description: "This certification validates my skills in creating effective print media designs, including layout design, typography, and color theory for various printed materials."
+    },
+    {
+      id: 2,
+      title: "Introduction to Visual Graphic Design",
+      image: "/lovable-uploads/3b8a96f6-6dca-4512-b15a-b62e277b11b5.png",
+      description: "This certification covers the fundamentals of visual design principles, including composition, balance, contrast, and visual hierarchy in graphic design projects."
+    },
+    {
+      id: 3,
+      title: "Developing Designs for a Logo",
+      image: "/lovable-uploads/ae99611d-bfdd-486b-90d7-9b41625453a9.png",
+      description: "This specialized certification focuses on logo design principles, brand identity development, and creating memorable and effective visual identifiers for businesses."
+    }
+  ];
+
+  const testimonials = [
+    {
+      name: "Sarah Johnson",
+      role: "Marketing Director",
+      content: "Thea's IT support was exceptional. She didn't just fix our technical issues, but took the time to understand our company's specific needs and provided tailored solutions that improved our overall workflow.",
+      image: "/lovable-uploads/de977a9a-321b-4ddc-a66f-1b976bce9561.png"
+    },
+    {
+      name: "Michael Rodriguez",
+      role: "Small Business Owner",
+      content: "Working with Thea was a breath of fresh air. Her patience in explaining complex technical concepts in simple terms made our technology transition smooth and stress-free.",
+      image: "/lovable-uploads/aed9ea82-3130-4884-aa0d-38f9d6f724ae.png"
+    },
+    {
+      name: "Priya Patel",
+      role: "HR Specialist",
+      content: "Thea's proactive approach to IT support helped us prevent potential problems before they affected our operations. Her dedication to continuous learning ensures she's always offering the most current solutions.",
+      image: "/lovable-uploads/image_2025-03-19_16-14-34.png"
     }
   ];
 
@@ -24,21 +77,6 @@ const Index = () => {
     <div className="min-h-screen bg-background font-helvetica">
       <Header />
       <Hero />
-
-      {/* Node Website Link */}
-      <div className="bg-primary/10 py-4 text-center">
-        <p className="text-primary">
-          View project on GitHub: {" "}
-          <a 
-            href="https://github.com/theaannemae/mallare-mae-web" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="underline hover:text-secondary"
-          >
-            theaannemae/mallare-mae-web
-          </a>
-        </p>
-      </div>
 
       {/* About Section */}
       <section id="about" className="section-padding">
@@ -72,7 +110,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <div className="aspect-w-16 aspect-h-9">
               <iframe
-                src="https://www.youtube.com/embed/your-video-id"
+                src="https://www.youtube.com/embed/PvIJS1rrU34"
                 title="Video Resume"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -104,26 +142,58 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Certificates Section */}
-      <section id="certificates" className="section-padding bg-gray-50">
+      {/* Testimonials Section */}
+      <section id="testimonials" className="section-padding">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Certificates</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center font-signika">Testimonials</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <img 
-              src="/lovable-uploads/567a6fe2-9f02-4903-a438-d6485e377dac.png" 
-              alt="Developing Designs for Print Media" 
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
-            <img 
-              src="/lovable-uploads/3b8a96f6-6dca-4512-b15a-b62e277b11b5.png" 
-              alt="Introduction to Visual Graphic Design" 
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
-            <img 
-              src="/lovable-uploads/ae99611d-bfdd-486b-90d7-9b41625453a9.png" 
-              alt="Developing Designs for a Logo" 
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
+            {testimonials.map((testimonial, index) => (
+              <div 
+                key={index}
+                className="bg-white p-6 rounded-lg shadow-md border border-gray-100 flex flex-col"
+              >
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+                    <img 
+                      src={testimonial.image} 
+                      alt={testimonial.name} 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold font-quicksand">{testimonial.name}</h3>
+                    <p className="text-sm text-gray-500">{testimonial.role}</p>
+                  </div>
+                </div>
+                <p className="text-gray-600 italic font-helvetica">{testimonial.content}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Certificates Section */}
+      <section id="certificates" className="section-padding bg-gradient-to-b from-[#D3E4FD] via-[#0EA5E9] to-[#1EAEDB]">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center text-white">Certificates</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {certificates.map((cert) => (
+              <div
+                key={cert.id}
+                className="bg-white/80 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all transform hover:scale-105"
+                onClick={() => setSelectedCertificate(cert)}
+              >
+                <img 
+                  src={cert.image} 
+                  alt={cert.title} 
+                  className="w-full h-auto"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-center font-quicksand">{cert.title}</h3>
+                  <p className="text-sm text-gray-500 text-center">Click to view details</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -132,16 +202,31 @@ const Index = () => {
       <section id="h5p" className="section-padding">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center font-signika">Interactive Content</h2>
-          <div className="max-w-4xl mx-auto">
-            <iframe
-              src="https://your-h5p-embed-url"
-              width="100%"
-              height="400"
-              frameBorder="0"
-              allowFullScreen
-              title="H5P Content"
-              className="rounded-lg shadow-lg"
-            ></iframe>
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div className="aspect-w-16 aspect-h-9">
+              <iframe 
+                src="https://thea-portfolio.h5p.com/content/1292577854245907408/embed" 
+                aria-label="Checking Up!" 
+                width="100%" 
+                height="637" 
+                frameBorder="0" 
+                allowFullScreen 
+                allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
+                className="rounded-lg shadow-lg"
+              ></iframe>
+            </div>
+            <div className="aspect-w-16 aspect-h-9">
+              <iframe 
+                src="https://thea-portfolio.h5p.com/content/1292577842197727738/embed" 
+                aria-label="What I Do When I'm Feeling Overwhelmed Doing a Project" 
+                width="100%" 
+                height="637" 
+                frameBorder="0" 
+                allowFullScreen 
+                allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
+                className="rounded-lg shadow-lg"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
@@ -151,29 +236,50 @@ const Index = () => {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center text-primary">Contact Me</h2>
           <div className="flex justify-center space-x-6">
-            <Button variant="ghost" size="icon" asChild>
+            <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
               <a href="mailto:theaannemae.mallare@neu.edu.ph" target="_blank" rel="noopener noreferrer">
-                <Mail className="h-6 w-6" />
+                <Mail className="h-8 w-8" />
               </a>
             </Button>
-            <Button variant="ghost" size="icon" asChild>
+            <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
               <a href="https://www.linkedin.com/in/thea-anne-mae-mallare-a579002a4/" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="h-6 w-6" />
+                <Linkedin className="h-8 w-8" />
               </a>
             </Button>
-            <Button variant="ghost" size="icon" asChild>
+            <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
               <a href="https://www.instagram.com/theaxmllr/" target="_blank" rel="noopener noreferrer">
-                <Instagram className="h-6 w-6" />
+                <Instagram className="h-8 w-8" />
               </a>
             </Button>
-            <Button variant="ghost" size="icon" asChild>
+            <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
               <a href="https://www.facebook.com/myname.is.theaa" target="_blank" rel="noopener noreferrer">
-                <Facebook className="h-6 w-6" />
+                <Facebook className="h-8 w-8" />
               </a>
             </Button>
           </div>
         </div>
       </section>
+
+      {/* Certificate Dialog */}
+      {selectedCertificate && (
+        <Dialog open={!!selectedCertificate} onOpenChange={() => setSelectedCertificate(null)}>
+          <DialogContent className="sm:max-w-md">
+            <DialogHeader>
+              <DialogTitle>{selectedCertificate.title}</DialogTitle>
+            </DialogHeader>
+            <div className="p-4">
+              <img 
+                src={selectedCertificate.image} 
+                alt={selectedCertificate.title} 
+                className="w-full h-auto mb-4 rounded-lg"
+              />
+              <DialogDescription>
+                {selectedCertificate.description}
+              </DialogDescription>
+            </div>
+          </DialogContent>
+        </Dialog>
+      )}
     </div>
   );
 };
