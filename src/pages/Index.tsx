@@ -19,15 +19,21 @@ const Index = () => {
   const blogPosts = [
     {
       title: "My Journey Through Tech: A Visual Story",
-      excerpt: "A collection of motivational quotes and personal insights from my journey in technology, reflecting my approach to problem-solving and growth in the IT industry.",
+      excerpt: "A collection of motivational quotes and personal insights from my journey in technology, reflecting my approach to problem-solving and growth in the IT industry. Throughout my career, I've found that resilience and adaptability are key components of success. Technology is ever-evolving, and staying ahead means embracing continuous learning and being open to new methodologies. As I progress in my IT support career, I've developed a unique perspective that combines technical precision with empathetic communication, ensuring that clients not only get their problems solved but also understand the solutions provided. This approach has proven invaluable in building long-term relationships with clients who appreciate both competence and clarity.",
       date: "2025-04-28",
       image: "/lovable-uploads/33bb35d3-b23a-4d89-a93c-6422a905ee8c.png"
     },
     {
       title: "The Future of IT Support: A Personal Perspective",
-      excerpt: "Exploring how modern IT support is evolving with technology and the increasing importance of personal connection in technical assistance.",
+      excerpt: "Exploring how modern IT support is evolving with technology and the increasing importance of personal connection in technical assistance. As automation and AI transform the industry, the human element becomes increasingly valuable. While many routine tasks can be handled by automated systems, complex problem-solving and understanding client needs still requires the human touch. I believe the most successful IT professionals will be those who can bridge technical expertise with effective communication skills. Additionally, as remote work becomes more prevalent, the ability to provide clear, concise support through various digital channels has become essential. Maintaining a personal connection while delivering technical assistance remotely presents new challenges that require innovative solutions.",
       date: "2025-04-28",
       image: "/lovable-uploads/3b8a96f6-6dca-4512-b15a-b62e277b11b5.png"
+    },
+    {
+      title: "Balancing Technical Expertise and Client Communication",
+      excerpt: "One of the greatest challenges in IT support is finding the perfect balance between technical knowledge and effective communication. In my experience, even the most brilliant technical solutions can fall flat if they cannot be clearly communicated to clients with varying levels of technical understanding. I've developed strategies to explain complex concepts in accessible ways without sacrificing accuracy or making clients feel overwhelmed. This approach not only solves immediate technical problems but also empowers clients to better understand their systems, potentially preventing future issues. As technology becomes increasingly integrated into every aspect of business operations, this skill becomes even more crucial for IT professionals who want to make a meaningful impact.",
+      date: "2025-04-15",
+      image: "/lovable-uploads/0807ad2c-49ab-494d-8783-a845de31d0b6.png"
     }
   ];
 
@@ -129,11 +135,13 @@ const Index = () => {
             {blogPosts.map((post) => (
               <Card key={post.title} className="overflow-hidden">
                 <CardContent className="p-0">
-                  <img src={post.image} alt={post.title} className="w-full h-auto" />
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-2 font-quicksand">{post.title}</h3>
-                    <p className="text-gray-600 mb-4 font-helvetica">{post.excerpt}</p>
-                    <p className="text-sm text-gray-500 font-quicksand">{post.date}</p>
+                  <div className="flex flex-col md:flex-row">
+                    <img src={post.image} alt={post.title} className="w-full md:w-1/4 h-auto" />
+                    <div className="p-6 flex-1">
+                      <h3 className="text-xl font-semibold mb-2 font-quicksand">{post.title}</h3>
+                      <p className="text-gray-600 mb-4 font-helvetica">{post.excerpt}</p>
+                      <p className="text-sm text-gray-500 font-quicksand">{post.date}</p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -173,7 +181,7 @@ const Index = () => {
       </section>
 
       {/* Certificates Section */}
-      <section id="certificates" className="section-padding bg-gradient-to-b from-[#D3E4FD] via-[#0EA5E9] to-[#1EAEDB]">
+      <section id="certificates" className="section-padding bg-gradient-to-b from-[#0EA5E9]/20 via-[#0EA5E9]/60 to-[#0EA5E9]/80">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center text-white">Certificates</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -238,22 +246,22 @@ const Index = () => {
           <div className="flex justify-center space-x-6">
             <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
               <a href="mailto:theaannemae.mallare@neu.edu.ph" target="_blank" rel="noopener noreferrer">
-                <Mail className="h-8 w-8" />
+                <Mail className="h-10 w-10" />
               </a>
             </Button>
             <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
               <a href="https://www.linkedin.com/in/thea-anne-mae-mallare-a579002a4/" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="h-8 w-8" />
+                <Linkedin className="h-10 w-10" />
               </a>
             </Button>
             <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
               <a href="https://www.instagram.com/theaxmllr/" target="_blank" rel="noopener noreferrer">
-                <Instagram className="h-8 w-8" />
+                <Instagram className="h-10 w-10" />
               </a>
             </Button>
             <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
               <a href="https://www.facebook.com/myname.is.theaa" target="_blank" rel="noopener noreferrer">
-                <Facebook className="h-8 w-8" />
+                <Facebook className="h-10 w-10" />
               </a>
             </Button>
           </div>
