@@ -128,7 +128,7 @@ const Index = () => {
 <section id="testimonials" className="section-padding bg-gradient-to-b from-[#382B2D] to-[#F0F1CA]">
   <div className="container mx-auto">
     <h2 className="text-3xl font-bold mb-12 text-center font-signika text-white">Testimonials</h2>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
       <div className="flex justify-center">
         <img 
           src="/lovable-uploads/56bef384-d05a-449f-ad13-7645566ecc39.png" 
@@ -199,7 +199,7 @@ const Index = () => {
             src="https://thea-portfolio.h5p.com/content/1292577842197727738/embed" 
             aria-label="What I Do When I'm Feeling Overwhelmed Doing a Project" 
             width="100%" 
-            height="300" 
+            height="250" 
             frameBorder="0" 
             allowFullScreen 
             allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
