@@ -125,37 +125,37 @@ const Index = () => {
         </div>
       </section>
 
-     {/* Testimonials Section */}
-<section id="testimonials" className="section-padding">
+   {/* Testimonials Section */}
+<section id="testimonials" className="section-padding bg-gradient-to-b from-[#382B2D] to-[#F0F1CA]">
   <div className="container mx-auto">
-    <h2 className="text-3xl font-bold mb-12 text-center font-signika">Testimonials</h2>
+    <h2 className="text-3xl font-bold mb-12 text-center font-signika text-white">Testimonials</h2>
     <ul className="space-y-4">
-      <li>
+      <li className="flex justify-center">
         <img 
           src="/lovable-uploads/56bef384-d05a-449f-ad13-7645566ecc39.png" 
           alt="Testimonial 1" 
-          className="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
+          className="max-w-xs h-auto rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
         />
       </li>
-      <li>
+      <li className="flex justify-center">
         <img 
           src="/lovable-uploads/1e649dcb-14f3-4b19-bfe7-89f93e2bc270.png" 
           alt="Testimonial 2" 
-          className="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
+          className="max-w-xs h-auto rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
         />
       </li>
-      <li>
+      <li className="flex justify-center">
         <img 
           src="/lovable-uploads/4d866b8f-2919-4cdc-80ce-91b113bf599a.png" 
           alt="Testimonial 3" 
-          className="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
+          className="max-w-xs h-auto rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
         />
       </li>
-      <li>
+      <li className="flex justify-center">
         <img 
           src="/lovable-uploads/45110632-0f35-4083-bb83-16497e111dca.png" 
           alt="Testimonial 4" 
-          className="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
+          className="max-w-xs h-auto rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
         />
       </li>
     </ul>
