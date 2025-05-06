@@ -100,34 +100,35 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Blog Section */}
-      <section id="blog" className="section-padding bg-gray-50">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center font-signika">Blog</h2>
-          <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
-            {blogPosts.map((post) => (
-              <Card key={post.title} className="overflow-hidden">
-                <CardContent className="p-0">
-                  <div className="flex flex-col md:flex-row">
-                    <div className="md:w-1/4 flex-shrink-0">
-                      <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
-                    </div>
-                    <div className="p-6 flex-1">
-                      <h3 className="text-xl font-semibold mb-2 font-quicksand">{post.title}</h3>
-                      <p className="text-gray-600 mb-4 font-helvetica">{post.excerpt}</p>
-                      <p className="text-sm text-gray-500 font-quicksand">{post.date}</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-{/* Testimonials Section */}
-<section id="testimonials" className="section-padding bg-gradient-to-b from-[#382B2D] to-[#F0F1CA]">
+ {/* Blog Section */}
+<section id="blog" className="section-padding bg-gradient-to-b from-white to-[#61479B]">
   <div className="container mx-auto">
-    <h2 className="text-3xl font-bold mb-12 text-center font-signika text-white">Testimonials</h2>
+    <h2 className="text-3xl font-bold mb-8 text-center font-signika text-black">Blog</h2>
+    <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
+      {blogPosts.map((post) => (
+        <Card key={post.title} className="overflow-hidden">
+          <CardContent className="p-0">
+            <div className="flex flex-col md:flex-row">
+              <div className="md:w-1/4 flex-shrink-0">
+                <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
+              </div>
+              <div className="p-6 flex-1">
+                <h3 className="text-xl font-semibold mb-2 font-quicksand">{post.title}</h3>
+                <p className="text-gray-600 mb-4 font-helvetica">{post.excerpt}</p>
+                <p className="text-sm text-gray-500 font-quicksand">{post.date}</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
+      
+{/* Testimonials Section */}
+<section id="testimonials" className="section-padding bg-white"> {/* Changed to a solid white background */}
+  <div className="container mx-auto">
+    <h2 className="text-3xl font-bold mb-12 text-center font-signika text-black">Testimonials</h2> {/* Changed text color to black for better contrast */}
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
       <div className="flex justify-center">
         <img 
@@ -199,7 +200,7 @@ const Index = () => {
             src="https://thea-portfolio.h5p.com/content/1292577842197727738/embed" 
             aria-label="What I Do When I'm Feeling Overwhelmed Doing a Project" 
             width="100%" 
-            height="250" 
+            height="230" 
             frameBorder="0" 
             allowFullScreen 
             allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
