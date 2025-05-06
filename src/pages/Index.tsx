@@ -110,7 +110,7 @@ const Index = () => {
       </section>
 
       {/* Video Resume Section */}
-      <section id="video-resume" className="section-padding bg-gray-50">
+      <section id="video-resume" className="section-padding bg-gradient-to-b from-[#F0F1CA] to-white">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center font-signika">Video Resume</h2>
           <div className="max-w-4xl mx-auto">
@@ -136,7 +136,9 @@ const Index = () => {
               <Card key={post.title} className="overflow-hidden">
                 <CardContent className="p-0">
                   <div className="flex flex-col md:flex-row">
-                    <img src={post.image} alt={post.title} className="w-full md:w-1/4 h-auto" />
+                    <div className="md:w-1/4 flex-shrink-0">
+                      <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
+                    </div>
                     <div className="p-6 flex-1">
                       <h3 className="text-xl font-semibold mb-2 font-quicksand">{post.title}</h3>
                       <p className="text-gray-600 mb-4 font-helvetica">{post.excerpt}</p>
@@ -181,7 +183,7 @@ const Index = () => {
       </section>
 
       {/* Certificates Section */}
-      <section id="certificates" className="section-padding bg-gradient-to-b from-[#0EA5E9]/20 via-[#0EA5E9]/60 to-[#0EA5E9]/80">
+      <section id="certificates" className="section-padding bg-gradient-to-b from-[#144198] to-[#61479B]">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center text-white">Certificates</h2>
           <div className="grid md:grid-cols-3 gap-8">
