@@ -160,8 +160,7 @@ const Index = () => {
     </div>
   </div>
 </section>
- 
-</section>
+
       {/* Certificates Section */}
       <section id="certificates" className="section-padding bg-gradient-to-b from-[#144198] to-[#61479B]">
         <div className="container mx-auto">
