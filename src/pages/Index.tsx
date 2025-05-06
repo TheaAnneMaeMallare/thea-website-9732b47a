@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, Linkedin, Mail, Phone, Video } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
@@ -18,22 +18,16 @@ const Index = () => {
 
   const blogPosts = [
     {
-      title: "My Journey Through Tech: A Visual Story",
-      excerpt: "A collection of motivational quotes and personal insights from my journey in technology, reflecting my approach to problem-solving and growth in the IT industry. Throughout my career, I've found that resilience and adaptability are key components of success. Technology is ever-evolving, and staying ahead means embracing continuous learning and being open to new methodologies. As I progress in my IT support career, I've developed a unique perspective that combines technical precision with empathetic communication, ensuring that clients not only get their problems solved but also understand the solutions provided. This approach has proven invaluable in building long-term relationships with clients who appreciate both competence and clarity.",
-      date: "2025-04-28",
-      image: "/lovable-uploads/33bb35d3-b23a-4d89-a93c-6422a905ee8c.png"
+      title: "Living the IT Student Life in the New Era",
+      excerpt: "Being an IT student today is nothing like it was a decade ago. In this digital-first age, we're not just studying technology; we're immersed in it. Every day in college feels like a hands-on workshop. It prepares us for a future that's already arriving. From cloud computing labs to virtual simulations, the tools we use reflect real-world IT environments. Our assignments often look more like freelance gigs: configuring networks, building websites, deploying apps, rather than traditional homework. With AI, cybersecurity, and remote systems growing fast, our courses adapt quickly to what's happening in the tech industry. Being a student now also means learning how to filter information, manage digital overload, and find focus in an endless stream of online tools. The pressure to keep up is real. Still, the excitement of working with emerging tech, experimenting with code, and seeing real results from what we learn is what keeps most of us going. College today is more than just a degree. It's a launchpad. It's where late nights debugging code and collaborating over Discord become part of the process. It's where IT becomes more than a subject. It becomes a mindset. I wouldn't trade that experience for anything.",
+      date: "2025-05-06",
+      image: "/lovable-uploads/56bef384-d05a-449f-ad13-7645566ecc39.png"
     },
     {
-      title: "The Future of IT Support: A Personal Perspective",
-      excerpt: "Exploring how modern IT support is evolving with technology and the increasing importance of personal connection in technical assistance. As automation and AI transform the industry, the human element becomes increasingly valuable. While many routine tasks can be handled by automated systems, complex problem-solving and understanding client needs still requires the human touch. I believe the most successful IT professionals will be those who can bridge technical expertise with effective communication skills. Additionally, as remote work becomes more prevalent, the ability to provide clear, concise support through various digital channels has become essential. Maintaining a personal connection while delivering technical assistance remotely presents new challenges that require innovative solutions.",
-      date: "2025-04-28",
-      image: "/lovable-uploads/3b8a96f6-6dca-4512-b15a-b62e277b11b5.png"
-    },
-    {
-      title: "Balancing Technical Expertise and Client Communication",
-      excerpt: "One of the greatest challenges in IT support is finding the perfect balance between technical knowledge and effective communication. In my experience, even the most brilliant technical solutions can fall flat if they cannot be clearly communicated to clients with varying levels of technical understanding. I've developed strategies to explain complex concepts in accessible ways without sacrificing accuracy or making clients feel overwhelmed. This approach not only solves immediate technical problems but also empowers clients to better understand their systems, potentially preventing future issues. As technology becomes increasingly integrated into every aspect of business operations, this skill becomes even more crucial for IT professionals who want to make a meaningful impact.",
-      date: "2025-04-15",
-      image: "/lovable-uploads/0807ad2c-49ab-494d-8783-a845de31d0b6.png"
+      title: "Professional Excellence in IT Support",
+      excerpt: "I had the pleasure of studying and working with Thea Anne Mae Mallare, and I can confidently say she is one of the most reliable and professional individuals I've worked alongside. Her consistency, adaptability, and strong problem-solving skills truly set her apart. Thea is highly skilled not only in front-end design and maintenance, but also in providing excellent IT support. She has a natural talent for troubleshooting technical issues, ensuring systems run smoothly, and assisting users with patience and efficiency. Her ability to stay calm under pressure and resolve problems quickly makes her a standout in the field. I highly recommend Thea as an IT Support Specialist. She brings both technical expertise and a strong work ethic to any team. Any organization would be lucky to have her on board. What sets Thea apart is her willingness to help others, her eye for detail, and her calm demeanor even under pressure. She's the kind of person you want on your team—not just for her technical skills, but for her professionalism and positive attitude.",
+      date: "2025-05-06",
+      image: "/lovable-uploads/4d866b8f-2919-4cdc-80ce-91b113bf599a.png"
     }
   ];
 
@@ -55,27 +49,6 @@ const Index = () => {
       title: "Developing Designs for a Logo",
       image: "/lovable-uploads/ae99611d-bfdd-486b-90d7-9b41625453a9.png",
       description: "This specialized certification focuses on logo design principles, brand identity development, and creating memorable and effective visual identifiers for businesses."
-    }
-  ];
-
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      role: "Marketing Director",
-      content: "Thea's IT support was exceptional. She didn't just fix our technical issues, but took the time to understand our company's specific needs and provided tailored solutions that improved our overall workflow.",
-      image: "/lovable-uploads/de977a9a-321b-4ddc-a66f-1b976bce9561.png"
-    },
-    {
-      name: "Michael Rodriguez",
-      role: "Small Business Owner",
-      content: "Working with Thea was a breath of fresh air. Her patience in explaining complex technical concepts in simple terms made our technology transition smooth and stress-free.",
-      image: "/lovable-uploads/aed9ea82-3130-4884-aa0d-38f9d6f724ae.png"
-    },
-    {
-      name: "Priya Patel",
-      role: "HR Specialist",
-      content: "Thea's proactive approach to IT support helped us prevent potential problems before they affected our operations. Her dedication to continuous learning ensures she's always offering the most current solutions.",
-      image: "/lovable-uploads/image_2025-03-19_16-14-34.png"
     }
   ];
 
@@ -156,28 +129,27 @@ const Index = () => {
       <section id="testimonials" className="section-padding">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center font-signika">Testimonials</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div 
-                key={index}
-                className="bg-white p-6 rounded-lg shadow-md border border-gray-100 flex flex-col"
-              >
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                    <img 
-                      src={testimonial.image} 
-                      alt={testimonial.name} 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold font-quicksand">{testimonial.name}</h3>
-                    <p className="text-sm text-gray-500">{testimonial.role}</p>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic font-helvetica">{testimonial.content}</p>
-              </div>
-            ))}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <img 
+              src="/lovable-uploads/1e649dcb-14f3-4b19-bfe7-89f93e2bc270.png" 
+              alt="Testimonial 1" 
+              className="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
+            />
+            <img 
+              src="/lovable-uploads/45110632-0f35-4083-bb83-16497e111dca.png" 
+              alt="Testimonial 2" 
+              className="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
+            />
+            <img 
+              src="/lovable-uploads/6be9b905-7388-4bde-aabb-d22bf10a88e9.png" 
+              alt="Testimonial 3" 
+              className="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
+            />
+            <img 
+              src="/lovable-uploads/5b2ec8fe-cc3a-4419-ba9f-30d3b78b7a1f.png" 
+              alt="Testimonial 4" 
+              className="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
+            />
           </div>
         </div>
       </section>
@@ -213,29 +185,33 @@ const Index = () => {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center font-signika">Interactive Content</h2>
           <div className="max-w-4xl mx-auto space-y-8">
-            <div className="aspect-w-16 aspect-h-9">
-              <iframe 
-                src="https://thea-portfolio.h5p.com/content/1292577854245907408/embed" 
-                aria-label="Checking Up!" 
-                width="100%" 
-                height="637" 
-                frameBorder="0" 
-                allowFullScreen 
-                allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
-                className="rounded-lg shadow-lg"
-              ></iframe>
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-center">What I Do When I'm Feeling Overwhelmed Doing a Project</h3>
+              <div className="aspect-w-16 aspect-h-9">
+                <iframe 
+                  src="https://thea-portfolio.h5p.com/content/1292577842197727738/embed" 
+                  aria-label="What I Do When I'm Feeling Overwhelmed Doing a Project" 
+                  width="100%" 
+                  height="637" 
+                  frameBorder="0" 
+                  allowFullScreen 
+                  allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
+                  className="rounded-lg shadow-lg"
+                ></iframe>
+              </div>
             </div>
-            <div className="aspect-w-16 aspect-h-9">
-              <iframe 
-                src="https://thea-portfolio.h5p.com/content/1292577842197727738/embed" 
-                aria-label="What I Do When I'm Feeling Overwhelmed Doing a Project" 
-                width="100%" 
-                height="637" 
-                frameBorder="0" 
-                allowFullScreen 
-                allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
-                className="rounded-lg shadow-lg"
-              ></iframe>
+            <div>
+              <div className="aspect-w-16 aspect-h-9">
+                <iframe 
+                  src="https://thea-portfolio.h5p.com/content/1292579864067651148/embed" 
+                  width="100%" 
+                  height="637" 
+                  frameBorder="0" 
+                  allowFullScreen 
+                  allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
+                  className="rounded-lg shadow-lg"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -248,22 +224,22 @@ const Index = () => {
           <div className="flex justify-center space-x-6">
             <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
               <a href="mailto:theaannemae.mallare@neu.edu.ph" target="_blank" rel="noopener noreferrer">
-                <Mail className="h-10 w-10" />
+                <Mail className="h-16 w-16" />
               </a>
             </Button>
             <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
               <a href="https://www.linkedin.com/in/thea-anne-mae-mallare-a579002a4/" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="h-10 w-10" />
+                <Linkedin className="h-16 w-16" />
               </a>
             </Button>
             <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
               <a href="https://www.instagram.com/theaxmllr/" target="_blank" rel="noopener noreferrer">
-                <Instagram className="h-10 w-10" />
+                <Instagram className="h-16 w-16" />
               </a>
             </Button>
             <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
               <a href="https://www.facebook.com/myname.is.theaa" target="_blank" rel="noopener noreferrer">
-                <Facebook className="h-10 w-10" />
+                <Facebook className="h-16 w-16" />
               </a>
             </Button>
           </div>
