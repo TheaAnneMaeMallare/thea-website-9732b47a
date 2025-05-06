@@ -192,7 +192,7 @@ const Index = () => {
             src="https://thea-portfolio.h5p.com/content/1292577842197727738/embed" 
             aria-label="What I Do When I'm Feeling Overwhelmed Doing a Project" 
             width="100%" 
-            height="637" 
+            height="300" 
             frameBorder="0" 
             allowFullScreen 
             allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
