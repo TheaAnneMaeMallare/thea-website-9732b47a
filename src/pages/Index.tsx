@@ -20,13 +20,13 @@ const Index = () => {
     {
       title: "Living the IT Student Life in the New Era",
       excerpt: "Being an IT student today is nothing like it was a decade ago. In this digital-first age, we're not just studying technology; we're immersed in it. Every day in college feels like a hands-on workshop. It prepares us for a future that's already arriving. From cloud computing labs to virtual simulations, the tools we use reflect real-world IT environments. Our assignments often look more like freelance gigs: configuring networks, building websites, deploying apps, rather than traditional homework. With AI, cybersecurity, and remote systems growing fast, our courses adapt quickly to what's happening in the tech industry. Being a student now also means learning how to filter information, manage digital overload, and find focus in an endless stream of online tools. The pressure to keep up is real. Still, the excitement of working with emerging tech, experimenting with code, and seeing real results from what we learn is what keeps most of us going. College today is more than just a degree. It's a launchpad. It's where late nights debugging code and collaborating over Discord become part of the process. It's where IT becomes more than a subject. It becomes a mindset. I wouldn't trade that experience for anything.",
-      date: "2025-05-06",
-      image: "/lovable-uploads/56bef384-d05a-449f-ad13-7645566ecc39.png"
+      date: "2025-04-02",
+      image: "/lovable-uploads/6be9b905-7388-4bde-aabb-d22bf10a88e9.png"
     },
     {
-      title: "Professional Excellence in IT Support",
-      excerpt: "I had the pleasure of studying and working with Thea Anne Mae Mallare, and I can confidently say she is one of the most reliable and professional individuals I've worked alongside. Her consistency, adaptability, and strong problem-solving skills truly set her apart. Thea is highly skilled not only in front-end design and maintenance, but also in providing excellent IT support. She has a natural talent for troubleshooting technical issues, ensuring systems run smoothly, and assisting users with patience and efficiency. Her ability to stay calm under pressure and resolve problems quickly makes her a standout in the field. I highly recommend Thea as an IT Support Specialist. She brings both technical expertise and a strong work ethic to any team. Any organization would be lucky to have her on board. What sets Thea apart is her willingness to help others, her eye for detail, and her calm demeanor even under pressure. She's the kind of person you want on your team—not just for her technical skills, but for her professionalism and positive attitude.",
-      date: "2025-05-06",
+      title: "From Newscaster Dreams to Building a Future in IT",
+      excerpt: "Growing up, I had one dream: to be a newscaster. I loved the spotlight, the storytelling, and the power of voice and presence. I imagined myself delivering the news, connecting with people, and shaping how they saw the world. But somewhere along the way, that dream started to shift. It began with small things. Helping classmates fix their computers, exploring tech forums, getting curious about how websites worked. I slowly realized I was more excited about learning how data moves through networks than preparing news scripts. The big moment came when I saw how technology could make just as much of an impact. It wasn’t just behind the scenes anymore. Tech was shaping the world. I found I could still connect with people and tell stories, but in a different way. I could solve problems, build systems, and help others navigate the digital space. So I changed direction, enrolled in an IT program, and started building a new kind of future. My early dream taught me how to communicate and stay composed under pressure. That still helps me today. Now, I’m writing a different story. One made of code, systems, and purpose.",
+      date: "2025-05-05",
       image: "/lovable-uploads/4d866b8f-2919-4cdc-80ce-91b113bf599a.png"
     }
   ];
@@ -131,22 +131,22 @@ const Index = () => {
           <h2 className="text-3xl font-bold mb-12 text-center font-signika">Testimonials</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <img 
-              src="/lovable-uploads/1e649dcb-14f3-4b19-bfe7-89f93e2bc270.png" 
+              src="/lovable-uploads/56bef384-d05a-449f-ad13-7645566ecc39.png" 
               alt="Testimonial 1" 
               className="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
             />
             <img 
-              src="/lovable-uploads/45110632-0f35-4083-bb83-16497e111dca.png" 
+              src="/lovable-uploads/1e649dcb-14f3-4b19-bfe7-89f93e2bc270.png" 
               alt="Testimonial 2" 
               className="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
             />
             <img 
-              src="/lovable-uploads/6be9b905-7388-4bde-aabb-d22bf10a88e9.png" 
+              src="/lovable-uploads/4d866b8f-2919-4cdc-80ce-91b113bf599a.png" 
               alt="Testimonial 3" 
               className="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
             />
             <img 
-              src="/lovable-uploads/5b2ec8fe-cc3a-4419-ba9f-30d3b78b7a1f.png" 
+              src="/lovable-uploads/45110632-0f35-4083-bb83-16497e111dca.png" 
               alt="Testimonial 4" 
               className="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-105"
             />
