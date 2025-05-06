@@ -226,34 +226,34 @@ const Index = () => {
 </section>
 
 
-      {/* Contact Section */}
-      <section id="contact" className="section-padding bg-accent">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center text-primary">Contact Me</h2>
-          <div className="flex justify-center space-x-6">
-            <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
-              <a href="mailto:theaannemae.mallare@neu.edu.ph" target="_blank" rel="noopener noreferrer">
-                <Mail className="h-16 w-16" />
-              </a>
-            </Button>
-            <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
-              <a href="https://www.linkedin.com/in/thea-anne-mae-mallare-a579002a4/" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="h-16 w-16" />
-              </a>
-            </Button>
-            <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
-              <a href="https://www.instagram.com/theaxmllr/" target="_blank" rel="noopener noreferrer">
-                <Instagram className="h-16 w-16" />
-              </a>
-            </Button>
-            <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
-              <a href="https://www.facebook.com/myname.is.theaa" target="_blank" rel="noopener noreferrer">
-                <Facebook className="h-16 w-16" />
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
+{/* Contact Section */}
+<section id="contact" className="section-padding bg-accent">
+  <div className="container mx-auto">
+    <h2 className="text-3xl font-bold mb-8 text-center text-primary">Contact Me</h2>
+    <div className="flex justify-center space-x-8"> {/* Increased space between buttons */}
+      <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
+        <a href="mailto:theaannemae.mallare@neu.edu.ph" target="_blank" rel="noopener noreferrer">
+          <Mail className="h-20 w-20" /> {/* Increased icon size */}
+        </a>
+      </Button>
+      <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
+        <a href="https://www.linkedin.com/in/thea-anne-mae-mallare-a579002a4/" target="_blank" rel="noopener noreferrer">
+          <Linkedin className="h-20 w-20" /> {/* Increased icon size */}
+        </a>
+      </Button>
+      <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
+        <a href="https://www.instagram.com/theaxmllr/" target="_blank" rel="noopener noreferrer">
+          <Instagram className="h-20 w-20" /> {/* Increased icon size */}
+        </a>
+      </Button>
+      <Button variant="ghost" size="lg" asChild className="text-primary hover:text-secondary">
+        <a href="https://www.facebook.com/myname.is.theaa" target="_blank" rel="noopener noreferrer">
+          <Facebook className="h-20 w-20" /> {/* Increased icon size */}
+        </a>
+      </Button>
+    </div>
+  </div>
+</section>
 
       {/* Certificate Dialog */}
       {selectedCertificate && (
