@@ -27,7 +27,7 @@ const Index = () => {
       title: "From Newscaster Dreams to Building a Future in IT",
       excerpt: "Growing up, I had one dream: to be a newscaster. I loved the spotlight, the storytelling, and the power of voice and presence. I imagined myself delivering the news, connecting with people, and shaping how they saw the world. But somewhere along the way, that dream started to shift. It began with small things. Helping classmates fix their computers, exploring tech forums, getting curious about how websites worked. I slowly realized I was more excited about learning how data moves through networks than preparing news scripts. The big moment came when I saw how technology could make just as much of an impact. It wasn’t just behind the scenes anymore. Tech was shaping the world. I found I could still connect with people and tell stories, but in a different way. I could solve problems, build systems, and help others navigate the digital space. So I changed direction, enrolled in an IT program, and started building a new kind of future. My early dream taught me how to communicate and stay composed under pressure. That still helps me today. Now, I’m writing a different story. One made of code, systems, and purpose.",
       date: "2025-05-05",
-      image: "/lovable-uploads/4d866b8f-2919-4cdc-80ce-91b113bf599a.png"
+      image: "/lovable-uploads/5b2ec8fe-cc3a-4419-ba9f-30d3b78b7a1f.png"
     }
   ];
 
@@ -181,41 +181,42 @@ const Index = () => {
       </section>
 
       {/* H5P Content Section */}
-      <section id="h5p" className="section-padding">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center font-signika">Interactive Content</h2>
-          <div className="max-w-4xl mx-auto space-y-8">
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-center">What I Do When I'm Feeling Overwhelmed Doing a Project</h3>
-              <div className="aspect-w-16 aspect-h-9">
-                <iframe 
-                  src="https://thea-portfolio.h5p.com/content/1292577842197727738/embed" 
-                  aria-label="What I Do When I'm Feeling Overwhelmed Doing a Project" 
-                  width="100%" 
-                  height="637" 
-                  frameBorder="0" 
-                  allowFullScreen 
-                  allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
-                  className="rounded-lg shadow-lg"
-                ></iframe>
-              </div>
-            </div>
-            <div>
-              <div className="aspect-w-16 aspect-h-9">
-                <iframe 
-                  src="https://thea-portfolio.h5p.com/content/1292579864067651148/embed" 
-                  width="100%" 
-                  height="637" 
-                  frameBorder="0" 
-                  allowFullScreen 
-                  allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
-                  className="rounded-lg shadow-lg"
-                ></iframe>
-              </div>
-            </div>
-          </div>
+<section id="h5p" className="section-padding">
+  <div className="container mx-auto">
+    <h2 className="text-3xl font-bold mb-8 text-center font-signika">Interactive Content</h2>
+    <div className="max-w-4xl mx-auto space-y-8">
+      <div className="max-w-2xl mx-auto">
+        <h3 className="text-xl font-semibold mb-4 text-center">What I Do When I'm Feeling Overwhelmed Doing a Project</h3>
+        <div className="aspect-w-16 aspect-h-9">
+          <iframe 
+            src="https://thea-portfolio.h5p.com/content/1292577842197727738/embed" 
+            aria-label="What I Do When I'm Feeling Overwhelmed Doing a Project" 
+            width="100%" 
+            height="637" 
+            frameBorder="0" 
+            allowFullScreen 
+            allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
+            className="rounded-lg shadow-lg"
+          ></iframe>
         </div>
-      </section>
+      </div>
+      <div>
+        <div className="aspect-w-16 aspect-h-9">
+          <iframe 
+            src="https://thea-portfolio.h5p.com/content/1292579864067651148/embed" 
+            width="100%" 
+            height="637" 
+            frameBorder="0" 
+            allowFullScreen 
+            allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
+            className="rounded-lg shadow-lg"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Contact Section */}
       <section id="contact" className="section-padding bg-accent">
