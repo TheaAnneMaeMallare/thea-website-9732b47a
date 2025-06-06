@@ -1,4 +1,3 @@
-
 import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -62,10 +61,10 @@ const Index = () => {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center font-signika">About Me</h2>
           <div className="max-w-3xl mx-auto text-lg text-gray-700 font-helvetica space-y-4">
-            <p>
+            <p className="text-justify">
               As an IT Support Specialist, it is in my capacity and willingness to fully understand each of my client's unique needs by asking the right questions. We wanted the best overall quality experience by observing what the client needs, catering, and addressing every concern, with their information handled securely and with the utmost care. This approach I am proud of, ensures that solutions are not only effective and reliable, but also tailored to deliver peace of mind and confidence in every interaction.
             </p>
-            <p>
+            <p className="text-justify">
               What varies us from every other IT Support Specialist is we are aspired and dedicated to learn and grow alongside our clients as we progress into the IT Industry. One distinct feature that I am looking forward with my duty is the connection that I can build with each client. Their satisfaction with my work would be a reflection of my progression and commitment to staying ahead in this evolving world of technology.
             </p>
             <div className="flex flex-col space-y-2 mt-6">
@@ -114,7 +113,7 @@ const Index = () => {
               </div>
               <div className="p-6 flex-1">
                 <h3 className="text-xl font-semibold mb-2 font-quicksand">{post.title}</h3>
-                <p className="text-gray-600 mb-4 font-helvetica">{post.excerpt}</p>
+                <p className="text-gray-600 mb-4 font-helvetica text-justify">{post.excerpt}</p>
                 <p className="text-sm text-gray-500 font-quicksand">{post.date}</p>
               </div>
             </div>
